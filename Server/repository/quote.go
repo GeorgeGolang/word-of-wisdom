@@ -1,34 +1,3 @@
-//package repository
-//
-//import "POWDDOS/domain"
-//
-//type InMemoryQuoteRepository struct {
-//	quotes []domain.Quote
-//}
-//
-//func NewInMemoryQuoteRepository() *InMemoryQuoteRepository {
-//	return &InMemoryQuoteRepository{
-//		quotes: []domain.Quote{
-//			{Text: "Stay hungry, stay foolish.", Author: "Steve Jobs"},
-//			{Text: "Stay hungry, stay foolish2", Author: "Steve Jobs"},
-//			{Text: "Stay hungry, stay foolish3", Author: "Steve Jobs"},
-//			{Text: "Stay hungry, stay foolish4", Author: "Steve Jobs"},
-//			{Text: "Stay hungry, stay foolish5", Author: "Steve Jobs"},
-//			{Text: "Stay hungry, stay foolish6", Author: "Steve Jobs"},
-//			{Text: "Stay hungry, stay foolish7", Author: "Steve Jobs"},
-//			{Text: "Stay hungry, stay foolish8", Author: "Steve Jobs"},
-//			{Text: "Stay hungry, stay foolish9", Author: "Steve Jobs"},
-//			{Text: "Stay hungry, stay foolish10", Author: "Steve Jobs"},
-//
-//			{Text: "Life is what happens when you're busy making other plans.", Author: "John Lennon"},
-//		},
-//	}
-//}
-//
-//func (r *InMemoryQuoteRepository) GetAll() ([]domain.Quote, error) {
-//	return r.quotes, nil
-//}
-
 package repository
 
 import (

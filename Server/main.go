@@ -1,26 +1,3 @@
-//package main
-//
-//import (
-//	"POWDDOS/delivery/tcp"
-//	"POWDDOS/repository"
-//	"POWDDOS/usecase"
-//)
-//
-//func main() {
-//	// Инициализация репозитория
-//	quoteRepo := repository.NewInMemoryQuoteRepository()
-//
-//	// Инициализация сервисов
-//	powService := usecase.NewPoWService()
-//	quoteService := usecase.NewQuoteService(quoteRepo)
-//
-//	// Настройка TCP-сервера
-//	server := tcp.NewServer(":8080", powService, quoteService)
-//	if err := server.Start(); err != nil {
-//		panic(err)
-//	}
-//}
-
 package main
 
 import (

@@ -1,32 +1,3 @@
-//package usecase
-//
-//import (
-//	"POWDDOS/domain"
-//	"math/rand"
-//	"time"
-//)
-//
-//type QuoteRepository interface {
-//	GetAll() ([]domain.Quote, error)
-//}
-//
-//type QuoteService struct {
-//	repo QuoteRepository
-//}
-//
-//func NewQuoteService(repo QuoteRepository) *QuoteService {
-//	return &QuoteService{repo: repo}
-//}
-//
-//func (s *QuoteService) GetRandomQuote() (domain.Quote, error) {
-//	quotes, err := s.repo.GetAll()
-//	if err != nil {
-//		return domain.Quote{}, err
-//	}
-//	rand.Seed(time.Now().UnixNano())
-//	return quotes[rand.Intn(len(quotes))], nil
-//}
-
 package usecase
 
 import (

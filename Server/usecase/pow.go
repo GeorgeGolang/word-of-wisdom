@@ -1,37 +1,3 @@
-//package usecase
-//
-//import (
-//	"POWDDOS/domain"
-//	"crypto/sha256"
-//	"encoding/hex"
-//	"fmt"
-//	"math/rand"
-//	"strings"
-//	"time"
-//)
-//
-//type PoWService struct{}
-//
-//func NewPoWService() *PoWService {
-//	return &PoWService{}
-//}
-//
-//func (s *PoWService) GenerateChallenge() domain.Challenge {
-//	rand.Seed(time.Now().UnixNano())
-//	value := fmt.Sprintf("%d", rand.Int())
-//	return domain.Challenge{
-//		ID:         fmt.Sprintf("%d", rand.Int63()),
-//		Value:      value,
-//		Difficulty: 4, // Требуется 4 ведущих нуля
-//	}
-//}
-//
-//func (s *PoWService) VerifyChallenge(challenge domain.Challenge, nonce string) bool {
-//	hash := sha256.Sum256([]byte(challenge.Value + nonce))
-//	hashStr := hex.EncodeToString(hash[:])
-//	return strings.HasPrefix(hashStr, strings.Repeat("0", challenge.Difficulty))
-//}
-
 package usecase
 
 import (
