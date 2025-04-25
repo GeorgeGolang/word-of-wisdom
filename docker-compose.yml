@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  server:
+    build: ./server
+    image: wisdom-server
+    ports:
+      - "8080:8080"
+    networks:
+      - wisdom-net
+  client:
+    build: ./client
+    image: wisdom-client
+    environment:
+      - SERVER_ADDR=server:8080
+    depends_on:
+      - server
+    networks:
+      - wisdom-net
+networks:
+  wisdom-net:
+    driver: bridge
